@@ -17,5 +17,11 @@ server.listen(port, function () {
 
 
 server.use(function (req, res, next) {
-  res.send('funcionou')
+  console.log('meu middleware 1');
+  next()
+})
+
+server.use(function (req, res, next) {
+  console.log('meu middleware 2');
+  res.send('funcionou novamente')
 })
