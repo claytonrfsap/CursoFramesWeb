@@ -1,8 +1,7 @@
 const port = 3003
 
-<<<<<<< HEAD
 const bodyParser = require('body-parser')
-=======
+
 // midleware parser do body da requisição, pega dados dos formulario
 const bodyParser = require('body-parser');
 const express = require('express');
@@ -17,4 +16,3 @@ server.use(bodyParser.json())
 server.listen(port, function () {
   console.log(`BACKEND  is running on port ${port}.`);
 })
->>>>>>> 1c06d14bcb4891be7d071565609e3667c2e3b6bf
